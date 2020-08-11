@@ -1,7 +1,8 @@
 button {
-    color: lightgray;
+    /*text color not the actual button color*/
+    color: black;
 }
 
-head {
+body {
     align-content: center;
 }
