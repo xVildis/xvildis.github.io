@@ -1,0 +1,13 @@
+button {
+    /*text color not the actual button color*/
+    color: black;
+}
+
+body {
+    background-color: lightblue;
+    overflow: scroll;
+}
+
+.left-marginal {
+    padding-left: 20%;
+}

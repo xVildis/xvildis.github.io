@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <title>github.io page</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/test.css">-->
+    <head>
+        <title>github.io page</title>
+        <meta charset="UTF8">
+    </head>
     <body>
-        <link rel="stylesheet" type="text/css" href="test.css">
         <h1>Testi H1</h1>
-        <p>moi</p>
-        <button>testi nappi</button>
+        <h2>pienempi otsikko</h2>
+        <!--erittäin pieni otsikko :D-->
+        <h6>pienin otsikko</h6>
+        <p>tekstikappale eli paragraph</p>
+        <p>toinen tekstikappale <br> rivinvaihto tulee tagilla br, eli break</p>
+        <h2>listat</h2>
+        <h3>tavallinen lista</h3>
+        <p>tavallisen listan tag on ul</p>
+        <ul>
+            <li>first element in the list?</li>
+            <li>second element</li>
+            <li>pretty neat-o</li>
+        </ul>
+        <h3>numeroitu lista</h3>
+        <p>numeroidun listan tag on ol</p>
+        <ol>
+            <li>element1</li>
+            <li>element2</li>
+            <li>element3</li>
+        </ol>
+
+        <h2>linkit</h2>
+        <h3>ulkoiset sivut</h3>
+        <p>käytä koko url:ää</p>
+        <p>a eli anchor, href eli reference, tagien väliin tulee teksti jonka lukija näkee</p>
+        <ul>
+            <li><a href="http://www.google.com" target="_blank">linkki googleen</a></li>
+        </ul>
+        
+        <h3>tässä linkki toiseen sisäiseen sivuun</h3>
+        <p>href = "html/site2.html"</p>
+        <ul>
+            <li><a href="html/site2.html" target="_blank">tässä toinen sivuni</a></li>
+        </ul>
+        <p>kuva tag on img, pakolliset tagit ovat src (lähde, source) alt (alternative, vaihtoehto), jos kuvaa ei löydy sivu näyttää alt tagin</p>
+        <img src="images/otus.jpg" alt="otus">
     </body>
 </html>
