@@ -6,6 +6,7 @@ button {
 body {
     background-color: lightblue;
     overflow: scroll;
+    width: 80%;
 }
 
 .left-marginal {
