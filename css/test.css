@@ -1,12 +1,15 @@
 body {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    font-family: verdana,arial;
-    background-color: lightslategrey;
+    background-color: rgb(88, 185, 218);
+    color: darkblue;
+    align-content: left;
+    padding-left: 15%;
 }
 
-.left-marginal {
-    padding-left: 20%;
+#tarkein {
+    color: red;
+    box-sizing: content-box;
+    border: 3px solid navy;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 3px;
 }
