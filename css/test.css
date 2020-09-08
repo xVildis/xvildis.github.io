@@ -1,15 +1,53 @@
 body {
-    background-color: rgb(88, 185, 218);
-    color: darkblue;
-    align-content: left;
-    padding-left: 15%;
+    /*
+    background-image: url(../images/pysty.jpg);
+    background-repeat: repeat-y;
+    */
+    /*
+    background-image: url(../images/polle.jpg);
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    */
+    background-image: url(../images/tumma.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    /*padding-left: 5%;*/
+    margin-left: 5%;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    color: white;
 }
 
 #tarkein {
-    color: red;
+    color: white;
     box-sizing: content-box;
-    border: 3px solid navy;
+    border: 1px solid white;
     border-radius: 10px;
     width: fit-content;
+    padding: 10px;
+    background-color: #333333;
+}
+
+h1 {
+    color: orange;
+    margin-top: 50px
+}
+
+h2 {
+    font-family: Verdana, serif;
+    font-size: 2em;
+}
+
+img {
+    width: 300px;
+    border: 3px #00aa00 solid;
+    margin-top: 30px;
     padding: 3px;
+    outline: 2px dotted red;
+}
+
+.kuvateksti {
+    color: grey;
+    font-style: italic;
 }
