@@ -1,18 +1,7 @@
 body {
-    /*
-    background-image: url(../images/pysty.jpg);
-    background-repeat: repeat-y;
-    */
-    /*
-    background-image: url(../images/polle.jpg);
-    background-position: right top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    */
     background-image: url(../images/tumma.jpg);
     background-size: 100%;
     background-repeat: repeat;
-    /*padding-left: 5%;*/
     margin-left: 5%;
     font-family: "Open Sans",sans-serif;
     font-size: 16px;

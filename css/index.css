@@ -1,0 +1,38 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(4, 100, 145) 100%);
+    color: white;
+    padding: 2.5rem;
+    margin: 0;
+    
+}
+
+a:link {
+    text-decoration-line: none;
+    color: slategray;
+}
+
+a:visited {
+    text-decoration-line: none;
+    color: lightskyblue;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: whitesmoke;
+}
+
+
+ul {
+    margin: 0;
+    position: relative;
+    align-content: space-around;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}

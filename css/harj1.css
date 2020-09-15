@@ -1,0 +1,51 @@
+/*
+    e - aseta koko sivulle marginaalit (vasen 40px)
+    j - hae tyyliisi sopiva taustakuva (hae free image, siis tekijänoikeutta ei rikota), huolehdi siitä, että kuvan päälle tulevaa tekstiä voi lukea
+    j - valitse teksteille sellainen koko ja väri, että ne erottuvat taustakuvasta
+    e - hae 2 - 3 eri fonttia, joita käytät teksteissä ja otsikoissa, määritä ne selektoreille
+    e - lisää kuvalle koko ja reunaviiva (220 px leveys, reunaviiva 2 px, taustaan sopiva väri)
+    e - aseta kuvalle padding 20px
+    e - tee uusi luokka "internet" tekstikappaleita varten, käytä sitä kohdassa, jossa kuvaat Internetin käyttöäsi
+    e - anna luokalle internet taustaväri tai -kuva ja muokkaa tekstin ulkoasua taustaan sopivaksi
+*/
+
+html, body {
+    height: 100%;
+}
+
+.bg {
+    margin: 0;
+    height: 100%;
+    height: 1650px;
+    background: url(../images/skyscrapers.jpg) no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(8px);
+}
+
+body {
+    margin: 0;
+    padding-left: 40px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+.bg-text {
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    
+}
+
+a:link {
+    color: lightgray;
+}
+
+a:visited {
+    color: lightseagreen;
+}
