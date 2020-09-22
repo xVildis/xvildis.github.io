@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo 6</title>
+        <meta charset="UTF8">
+        
+    </head>
+    <body>
+        <h1>Esimerkkisivu</h1>
+        <form action="https://www.leeniemi.net/julkiset19/luelomake.php" method="POST">
+            Etunimi<br>
+            <input type="text" name="enimi" id="enimi"><br>
+
+            Sukunimi<br>
+            <input type="text" name="snimi" id="snimi"><br>
+
+            Äidinkieli<br>
+            <input type="radio" name="kieli" id="kieli" value="suomi">Suomi<br>
+            <input type="radio" name="kieli" id="kieli" value="ruotsi">Ruotsi<br>
+            <input type="radio" name="kieli" id="kieli" value="venaja">Venäjä<br>
+
+            Muu kielitaito<br>
+            <input type="checkbox" name="kieli" id="kieli" value="suomi">Suomi<br>
+            <input type="checkbox" name="kieli" id="kieli" value="ruotsi">Ruotsi<br>
+            <input type="checkbox" name="kieli" id="kieli" value="venaja">Venäjä<br>
+            <input type="checkbox" name="kieli" id="kieli" value="englanti">Englanti<br>
+            <input type="checkbox" name="kieli" id="kieli" value="saksa">Saksa<br>
+
+            Syntymävuosi<br>
+            <select name="vuosi" id="vuosi">
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+
+            </select>
+            <br>
+            <textarea name="vapaa"></textarea>
+            <br>
+            <input type="reset" value="Tyhjennä lomake">
+            <input type="submit" value="Lähetä tiedot">
+
+        </form>
+    </body>
+</html>
