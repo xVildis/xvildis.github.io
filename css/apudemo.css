@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+section {
+    /* view height */
+    height: 100vh;
+
+}
+
+#kalatori {
+    background: red;
+}
+
+#markkinat {
+    background: blue;
+}
+#hinnasto {
+    background: green;
+}
+#yhteys {
+    background: white;
+}
+#sijainti {
+    background: black;
+}
