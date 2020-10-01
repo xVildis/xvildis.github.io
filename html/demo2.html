@@ -8,14 +8,15 @@
 </head>
 <body>
     <button onclick="topFunction()" id="topButton">To the top!</button>
-    <ul>
-        <li><a href="#kalatori">Kalatori</a></li>
-        <li><a href="#markkinat">Markkinat</a></li>
-        <li><a href="#hinnasto">Hinnasto</a></li>
-        <li><a href="#contact">Ota yhteyttä</a></li>
-        <li><a href="#sijainti">Sijainti</a></li>
-
-    </ul>
+    <header>
+        <ul class="navi">
+            <li><a class="active" href="#kalatori">Kalatori</a></li>
+            <li><a href="#markkinat">Markkinat</a></li>
+            <li><a href="#hinnasto">Hinnasto</a></li>
+            <li><a href="#contact">Ota yhteyttä</a></li>
+            <li><a href="#sijainti">Sijainti</a></li>
+        </ul>
+    </header>
 
     <section id="kalatori">
         <h1 id="kalatori">Kalatori</h1>
@@ -32,9 +33,11 @@
             <li>Joulumarkkinat tiistai 15.12. klo 7–15</li>
         </ul>
 
-        <img src="../images/mustekala.jpg" alt="Mustekala">
-        <img src="../images/pienikala.jpg" alt="Pieni Kala">
-        <img src="../images/rapu.jpg" alt="Rapu">
+    <div id="kuvat">
+        <img src="../images/mustekala.jpg" alt="Mustekala" class="round">
+        <img src="../images/pienikala.jpg" alt="Pieni Kala" class="round">
+        <img src="../images/rapu.jpg" alt="Rapu" class="round">
+    </div>
     </section>
 
     <section id="hinnasto">
