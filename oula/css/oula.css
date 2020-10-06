@@ -10,19 +10,22 @@
     margin-top: 6px;
 } */
 
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
   
-
 textarea {
     width: 30%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 4px;
 
     resize: none;

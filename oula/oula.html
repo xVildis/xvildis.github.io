@@ -4,70 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Oula</title>
+    <link rel="stylesheet" href="./css/oula.css">
 </head>
 <body>
     <h1>Tervetuloa ravintola Oulan nettisivuille!</h1>
+    
     <h2>Lounaslista</h2>
-
     <p>Lounaan hinta joka päivä 11€ <br> Sisältää ruokajuoman (vesi, kotikalja, maito)</p>
     
-    <img src="../images/vanhat/kanankoipi-edited.jpeg"     alt="otus">
-    <img src="../images/vanhat/salaatti-edited.jpeg"       alt="otus">
-    <img src="../images/vanhat/food-hand-edited.jpg"       alt="otus">
-    <img src="../images/vanhat/riisi-kananmuna.jpeg"       alt="otus">
-    <img src="../images/vanhat/kurpitsakeitto-edited.jpeg" alt="otus">
-    <table>
-        <tr><th>Maanantai</th></tr>
-        <tr>
-            <td>Juusto-vihanneskeittoa ja kokin sämpylä<br>
-                Paistettua lohta, sinappikastiketta, tilliperunoita ja kasviksia <br>
-                Marjakiisseliä ja hunajakermavaahtoa
-            </td>
-        </tr>
-        <tr><th>Tiistai</th></tr>
-        <tr>
-            <td>
-                Kana-fetajustosalaattia ja kokin sämpylä<br>
-                Paistettua punakampelaa, pinaattikastiketta ja perunamuusia<br>
-                Pannukakkua, mansikkahilloa ja kermavaahtoa
-            </td>
-        </tr>
-        <tr><th>Keskiviikko</th></tr>
-        <tr>
-            <td>
-                Tomaatti-yrttikeittoa ja kokin sämpylä<br>
-                Kalkkunaleikettä, BBQ-kastiketta, riisiä ja kasviksia <br>
-                Omenapiirakkaa ja vaniljakastiketta 
-            </td>
-        </tr>
-        <tr><th>Torstai</th></tr>
-        <tr>
-            <td>
-                Rapukeittoa ja kokin sämpylä<br>
-                Poronkäristystä, perunamuusia, puolukkahilloa ja suolakurkkuja<br>
-                Hedelmäsalaattia ja kinuskikastiketta
-            </td>
-        </tr>
-        <tr><th>Perjantai</th></tr>
-        <tr>
-            <td>
-                Savulohisalaatti ja kokin sämpylä<br>
-                Naudan paahtopaistia, punaviinikastiketta, kermaperunat ja kasviksia<br>
-                Suklaamousse
-            </td>
-        </tr>
-    </table>
-    
-    <h2>Aukioloajat </h2>
-    <table>
-      <tr><th>Ma-Pe</th></tr>
-      <tr><td>10:30 - 15:00</td></tr>
-      <tr><th>La</th></tr>
-      <tr><td>11:00 - 15:00</td></tr>
-      <tr><th>Pe & La</th></tr>
-      <tr><td>17:00 - 21:00 à la carte -lista</td></tr>
-    </table>
+    <img src="./img/kanankoipi-edited.jpeg"     alt="otus">
+    <img src="./img/salaatti-edited.jpeg"       alt="otus">
+    <img src="./img/food-hand-edited.jpg"       alt="otus">
+    <img src="./img/riisi-kananmuna.jpeg"       alt="otus">
+    <img src="./img/kurpitsakeitto-edited.jpeg" alt="otus">
 
+    <section id="ruokalista">
+        <table>
+            <tr><th>Maanantai</th></tr>
+            <tr>
+                <td>Juusto-vihanneskeittoa ja kokin sämpylä<br>
+                    Paistettua lohta, sinappikastiketta, tilliperunoita ja kasviksia <br>
+                    Marjakiisseliä ja hunajakermavaahtoa
+                </td>
+            </tr>
+            <tr><th>Tiistai</th></tr>
+            <tr>
+                <td>
+                    Kana-fetajustosalaattia ja kokin sämpylä<br>
+                    Paistettua punakampelaa, pinaattikastiketta ja perunamuusia<br>
+                    Pannukakkua, mansikkahilloa ja kermavaahtoa
+                </td>
+            </tr>
+            <tr><th>Keskiviikko</th></tr>
+            <tr>
+                <td>
+                    Tomaatti-yrttikeittoa ja kokin sämpylä<br>
+                    Kalkkunaleikettä, BBQ-kastiketta, riisiä ja kasviksia <br>
+                    Omenapiirakkaa ja vaniljakastiketta 
+                </td>
+            </tr>
+            <tr><th>Torstai</th></tr>
+            <tr>
+                <td>
+                    Rapukeittoa ja kokin sämpylä<br>
+                    Poronkäristystä, perunamuusia, puolukkahilloa ja suolakurkkuja<br>
+                    Hedelmäsalaattia ja kinuskikastiketta
+                </td>
+            </tr>
+            <tr><th>Perjantai</th></tr>
+            <tr>
+                <td>
+                    Savulohisalaatti ja kokin sämpylä<br>
+                    Naudan paahtopaistia, punaviinikastiketta, kermaperunat ja kasviksia<br>
+                    Suklaamousse
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="aukiolo">
+        <h2>Aukioloajat </h2>
+        <table>
+          <tr><th>Ma-Pe</th></tr>
+          <tr><td>10:30 - 15:00</td></tr>
+          <tr><th>La</th></tr>
+          <tr><td>11:00 - 15:00</td></tr>
+          <tr><th>Pe & La</th></tr>
+          <tr><td>17:00 - 21:00 à la carte -lista</td></tr>
+        </table>
+    </section>
 
     <section id="poutavaraus">
         <form action="" method="post" id="varaus">
@@ -94,14 +99,16 @@
     </section>
     
     <br>
-    <address>
-        Ravintola Oula<br>
-        Hallituskatu 12<br>
-        96200 ROVANIEMI<br>
-        <br>
-        Puh. (016) 555 4755<br>
-        Fax (016) 555 4756<br>
-        E-Mail: ravintola.oula@oulanet.fi<br>
-    </address>
+    <footer>
+        <address>
+            Ravintola Oula<br>
+            Hallituskatu 12<br>
+            96200 ROVANIEMI<br>
+            <br>
+            Puh. (016) 555 4755<br>
+            Fax (016) 555 4756<br>
+            E-Mail: ravintola.oula@oulanet.fi<br>
+        </address>
+    </footer>
 </body>
 </html>
