@@ -40,6 +40,30 @@
     </div>
     </section>
 
+    <section id="poutavaraus">
+        <form action="" method="post" id="varaus">
+            <label for="nimi">Nimi</label>
+            <input type="text" name="nimi" id="nimi">
+            <br>
+            <label for="puhnum">Puhelin</label>
+            <input type="text" name="puhnum" id="puhnum">
+            <br>
+            <label for="sposti">Sähköposti</label>
+            <input type="email" name="sposti" id="sposti">
+            <br>
+            <label for="aika">Ajankohta</label>
+            <input type="datetime-local" name="aika" id="aika">
+            <br>
+            <label for="erikois">Erikoistoivomukset</label>
+            <input type="text" name="erikois" id="erikois" style="width: 300px; height: 200px;">
+            <br>
+            <input type="submit" value="Varaa" id="submit">
+        </form>
+        <script>
+            window.onload = document.getElementById("laskuri").onsubmit = laske_kulut;
+        </script>
+    </section>
+
     <section id="hinnasto">
         <h3 id="hinnasto">Hinnasto</h3>
 
