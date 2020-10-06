@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -10,11 +11,11 @@
 
     <p>Lounaan hinta joka päivä 11€ <br> Sisältää ruokajuoman (vesi, kotikalja, maito)</p>
     
-    <img src="../images/kanankoipi-edited.jpeg"     alt="otus">
-    <img src="../images/salaatti-edited.jpeg"       alt="otus">
-    <img src="../images/food-hand-edited.jpg"       alt="otus">
-    <img src="../images/riisi-kananmuna.jpeg"       alt="otus">
-    <img src="../images/kurpitsakeitto-edited.jpeg" alt="otus">
+    <img src="../images/vanhat/kanankoipi-edited.jpeg"     alt="otus">
+    <img src="../images/vanhat/salaatti-edited.jpeg"       alt="otus">
+    <img src="../images/vanhat/food-hand-edited.jpg"       alt="otus">
+    <img src="../images/vanhat/riisi-kananmuna.jpeg"       alt="otus">
+    <img src="../images/vanhat/kurpitsakeitto-edited.jpeg" alt="otus">
     <table>
         <tr><th>Maanantai</th></tr>
         <tr>
@@ -67,6 +68,31 @@
       <tr><td>17:00 - 21:00 à la carte -lista</td></tr>
     </table>
 
+
+    <section id="poutavaraus">
+        <form action="" method="post" id="varaus">
+            <label for="nimi">Nimi</label>
+            <input type="text" name="nimi" id="nimi">
+            <br>
+            <label for="puhnum">Puhelin</label>
+            <input type="text" name="puhnum" id="puhnum">
+            <br>
+            <label for="sposti">Sähköposti</label>
+            <input type="email" name="sposti" id="sposti">
+            <br>
+            <label for="aika">Ajankohta</label>
+            <input type="datetime-local" name="aika" id="aika">
+            <br>
+            <label for="erikois">Erikoistoivomukset</label>
+            <textarea name="erikois" id="erikois" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Varaa" id="submit">
+        </form>
+        <script>
+            //window.onload = document.getElementById("laskuri").onsubmit = laske_kulut;
+        </script>
+    </section>
+    
     <br>
     <address>
         Ravintola Oula<br>

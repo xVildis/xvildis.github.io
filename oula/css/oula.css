@@ -1,0 +1,29 @@
+/* #varaus label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+#varaus input[type~=button] {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+} */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+textarea {
+    width: 30%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+
+    resize: none;
+}
