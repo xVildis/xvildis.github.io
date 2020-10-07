@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Oula</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/oula.css">
 </head>
 <body>
     <h1>Tervetuloa ravintola Oulan nettisivuille!</h1>
     
     <h2>Lounaslista</h2>
-    <p>Lounaan hinta joka päivä 11€ <br> Sisältää ruokajuoman (vesi, kotikalja, maito)</p>
+    <p id="kuvaus">Lounaan hinta joka päivä 11€ <br> Sisältää ruokajuoman (vesi, kotikalja, maito)</p>
     
-    <img src="./img/kanankoipi-edited.jpeg"     alt="otus">
-    <img src="./img/salaatti-edited.jpeg"       alt="otus">
-    <img src="./img/food-hand-edited.jpg"       alt="otus">
-    <img src="./img/riisi-kananmuna.jpeg"       alt="otus">
-    <img src="./img/kurpitsakeitto-edited.jpeg" alt="otus">
+    <section id="ruokakuvat">
+        <img src="./img/kanankoipi-edited.jpeg"     alt="otus">
+        <img src="./img/salaatti-edited.jpeg"       alt="otus">
+        <img src="./img/food-hand-edited.jpg"       alt="otus">
+        <img src="./img/riisi-kananmuna.jpeg"       alt="otus">
+        <img src="./img/kurpitsakeitto-edited.jpeg" alt="otus">
+    </section>
 
     <section id="ruokalista">
         <table>
@@ -89,6 +92,7 @@
             <input type="datetime-local" name="aika" id="aika">
             <br>
             <label for="erikois">Erikoistoivomukset</label>
+            <br>
             <textarea name="erikois" id="erikois" cols="30" rows="10"></textarea>
             <br>
             <input type="submit" value="Varaa" id="submit">

@@ -1,18 +1,11 @@
-/* #varaus label {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-  
-#varaus input[type~=button] {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-} */
 
 body, html {
     padding: 0;
     margin: 0;
+    text-align: center;
+    scroll-behavior: smooth;
+
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .row:after {
@@ -20,13 +13,67 @@ body, html {
     display: table;
     clear: both;
 }
-  
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+#ruokakuvat {
+    outline: 1px solid black;
+}
+
+#ruokakuvat img{
+    float: center;
+    border-radius: 30%;
+
+}
+
+#aukiolo {
+    outline: 1px solid black;
+}
+
+#poutavaraus {
+    padding-top: 10px;
+}
+
 textarea {
     width: 30%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
     border-radius: 4px;
-
     resize: none;
+}
+
+#varaus label {
+    float: left;
+    width: 10em;
+    margin-right: 0px;
+    text-align: right;
+}
+
+footer {
+    font-size: 120%;
+    
+    outline: 1px solid black;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+
+    font-size: 115%;
+}
+  
+input[type=submit]:hover {
+    background-color: #e7e7e7;
 }
