@@ -1,0 +1,75 @@
+<canvas id="canvas" width="1000" height="1000"></canvas>
+<script>
+var sun = new Image();
+var moon = new Image();
+var earth = new Image();
+
+function init() {
+	sun.src = './sun.png';
+	moon.src = './moon.png';
+	earth.src = './earth.png';
+	window.requestAnimationFrame(draw);
+}
+
+function draw() {
+	// Hankitaan 2d piirtokonteksti canvas- objektiin
+	var ctx = document.getElementById('canvas').getContext('2d');
+	
+	// Jotta kuvat tulisivat päällekkäin, tämä täytyy olla
+	ctx.globalCompositeOperation = 'destination-over';
+	
+	// Tyhjennetään canvas
+	ctx.clearRect(0, 0, 300, 300); 
+	
+	// Piirretään musta tausta jossa on vähän läpinäkyvyyttä
+	ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+	// Maan kiertoradan viivan väri
+	ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+	
+	// Tallentaa koko canvaksen
+	ctx.save();
+	
+	ctx.translate(150, 150);
+	
+	// Animoidaan maa pyörimään auringon ympärillä
+	var time = new Date();
+	ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+	// Asetetaan maa radalleen
+	ctx.translate(105, 0);
+	
+	// Piirretään maa
+	ctx.drawImage(earth, -12, -12);
+	
+	// Tallentaa koko canvaksen
+	ctx.save();
+	// Animoidaan kuun pyöriminen maapallon ympärille
+	ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+	
+	// Asetetaan kuu radalleen
+	ctx.translate(0, 28.5);
+	
+	// Piirretään kuu
+	ctx.drawImage(moon, -3.5, -3.5);
+	
+	// Palautetaan tallennettu canvas (rivi 40) muistista takaisin
+	ctx.restore();
+	
+	// Palautetaan tallennettu canvas (rivi 27) 
+	ctx.restore();
+	
+	// Aloitetaan piirtämään
+	ctx.beginPath();
+	// Asetuksia maan kiertoradan viivalle
+	ctx.arc(150, 150, 105, 0, Math.PI * 2, false);
+	// piirretään viiva
+	ctx.stroke();
+	
+	// Piirretään aurinko ja tausta
+	ctx.drawImage(sun, 0, 0, 300, 300);
+	
+	// Piirretään kaikki
+	window.requestAnimationFrame(draw);
+}
+
+init();
+</script>

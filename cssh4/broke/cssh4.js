@@ -16,7 +16,7 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
-  }
+}
 
 
 
@@ -71,6 +71,7 @@ var myGameArea = {
             this.x += this.speed;
         }
     }
+
   }
   
 function updateGameArea() {
@@ -88,20 +89,21 @@ function updateGameArea() {
 }
 
 function endGame() {
-    myGameArea.enemies.forEach(function(enemy){
-        enemy = null;
-    })
-    myGameArea.bullets.forEach(function(bullet){
-        bullet = null;
-    })
+    myGameArea.enemies = null;
+    myGameArea.bullets = null;
+	
     clearInterval(myGameArea.interval);
     clearInterval(myGameArea.enemyspawner);
+	myGameArea.enemyspawner = 0;
+	clearInterval(spawner);
     
+	window.removeEventListener("keydown", handleInput, true);
+	
     myGameArea.clear();
     return 0;
 }
 
-window.addEventListener("keydown", function (event) {
+function handleInput(event) {
     if (event.defaultPrevented) {
       return; // Do nothing if the event was already processed
     }
@@ -133,4 +135,6 @@ window.addEventListener("keydown", function (event) {
     // Cancel the default action to avoid it being handled twice
     
     event.preventDefault();
-  }, true);
+  }
+
+window.addEventListener("keydown", handleInput, true);
