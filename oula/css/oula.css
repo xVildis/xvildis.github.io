@@ -19,11 +19,6 @@ table {
     margin-right: auto;
 }
 
-textarea {
-    vertical-align: top;
-    border-radius: 10px;
-}
-
 #ruokakuvat {
     outline: 1px solid black;
 }
@@ -31,7 +26,6 @@ textarea {
 #ruokakuvat img{
     float: center;
     border-radius: 30%;
-
 }
 
 #aukiolo {
@@ -42,23 +36,29 @@ textarea {
     padding-top: 10px;
 }
 
+/* #erikoisa {
+    margin-top: 15px;
+}
+
+#erikoisa label{
+    float: center;
+    width: 0;
+    margin-right: 0.5vw;
+    text-align: center;
+} */
+
 textarea {
+    font-family: 'Source Sans Pro', sans-serif;
     width: 30%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    background-color: #f8f8f8;
+    color: rgb(0,0,0);
+    background-color: #c8c8c8;
     border-radius: 4px;
     resize: none;
-}
-
-#varaus label {
-    float: left;
-    width: 10em;
-    margin-right: 0px;
-    text-align: right;
-}
+} 
 
 footer {
     font-size: 120%;
@@ -76,4 +76,38 @@ input[type=submit] {
   
 input[type=submit]:hover {
     background-color: #e7e7e7;
+}
+
+.poutavaraus {
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+}
+.poutavaraus2 label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.poutavaraus2 label > span {
+	width: 40px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.poutavaraus2 #puhnum {
+	width: 185px;
+	text-align: center;
+}
+
+.poutavaraus2 input, 
+.poutavaraus2 textarea {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	resize: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
 }

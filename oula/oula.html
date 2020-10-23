@@ -78,25 +78,39 @@
     </section>
 
     <section id="poutavaraus">
-        <form action="" method="post" id="varaus">
-            <label for="nimi">Nimi</label>
-            <input type="text" name="nimi" id="nimi">
-            <br>
-            <label for="puhnum">Puhelin</label>
-            <input type="text" name="puhnum" id="puhnum">
-            <br>
-            <label for="sposti">Sähköposti</label>
-            <input type="email" name="sposti" id="sposti">
-            <br>
-            <label for="aika">Ajankohta</label>
-            <input type="datetime-local" name="aika" id="aika">
-            <br>
-            <label for="erikois">Erikoistoivomukset</label>
-            <br>
-            <textarea name="erikois" id="erikois" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Varaa" id="submit">
-        </form>
+        <div class="poutavaraus2">
+            <form action="" method="post" id="varaus">
+                <div id="ei_erikois">
+                    <label for="nimi"><span>Nimi</span>
+                        <input type="text" name="nimi" id="nimi">
+                    </label>
+                    <br>
+                    
+                    <label for="puhnum"><span>Puhelin</span>
+                        <input type="text" name="puhnum" id="puhnum">
+                    </label>
+                    <br>
+
+                    <label for="sposti"><span>Sähköposti</span>
+                        <input type="email" name="sposti" id="sposti">
+                    </label>
+                    <br>
+
+                    <label for="aika"><span>Ajankohta</span>
+                        <input type="datetime-local" name="aika" id="aika">
+                    </label>
+                    <br>
+                </div>
+                <div id="erikoisa">
+                    <label for="erikois"><span>Erikoistoivomukset</span>
+                        <br>
+                        <textarea name="erikois" id="erikois" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+                <br>
+                <input type="submit" value="Varaa" id="submit">
+            </form>
+        </div>
         <script>
             //window.onload = document.getElementById("laskuri").onsubmit = laske_kulut;
         </script>
