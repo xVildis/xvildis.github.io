@@ -1,3 +1,13 @@
+* {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
 
 div.container {
     display: grid;
@@ -17,17 +27,36 @@ header {
     grid-area: head;
 }
 
-footer {
-    background: rgb(0,0,0,0.2);
-    grid-area: foot;
-}
-
 .leftpanel {
     background: rgb(0,0,0,0.2);
     grid-area: panleft;
 }
 
-.leftpanel {
+main {
+    grid-area: mainbody;
+}
+
+.rightpanel {
     background: rgb(0,0,0,0.2);
     grid-area: panright;
+}
+
+footer {
+    background: rgb(0,0,0,0.2);
+    grid-area: foot;
+}
+
+@media screen and (max-width: 50rem) {
+    .leftpanel {
+        grid-column-end: left;
+        display: none;
+    }
+    .rightpanel {
+        grid-column-start: right;
+        display: none;
+    }
+    main {
+        grid-column-start: left;
+        grid-column-end: right;
+    }
 }
