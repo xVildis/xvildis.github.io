@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mestarit</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
+		<style>
+			html {
+				font-family: 'helvetica neue', helvetica, arial, sans-serif;
+			}
+
+			body {
+				width: 800px;
+				margin: 0 auto;
+			}
+
+			h1, h2 {
+				font-family: 'Amatic SC', bold;
+			}
+
+			/* header styles */
+
+			h1 {
+				font-size: 4rem;
+				text-align: center;
+			}
+
+			header p {
+				font-size: 1.3rem;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			/* section styles */
+
+			section article {
+				width: 33%;
+				float: left;
+			}
+
+			section p {
+				margin: 5px 0;
+			}
+
+			section ul {
+				margin-top: 0;
+			}
+
+			h2 {
+				font-size: 2rem;
+				letter-spacing: -2px;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+			<header>
+
+			</header>
+
+			<section>
+
+			</section>
+
+		<script>
+		var header = document.querySelector('header');
+		var section = document.querySelector('section');
+		
+		var requestURL = '../json/mestarit.json';
+		var request = new XMLHttpRequest();
+		request.open('GET', requestURL);
+		request.responseType = 'json';
+
+		request.send();
+
+		request.onload = () => {
+			var mestarit = request.response;
+			buildHeader(mestarit);
+			buildSection(mestarit);
+		}
+
+		function buildHeader(jsonObj) {
+			var myH1 = document.createElement('h1');
+			myH1.textContent = jsonObj['listanNimi'];
+			header.appendChild(myH1);
+
+			var myPara = document.createElement('p');
+			myPara.textContent = 'Kotipaikka: ' + jsonObj['kotipaikka'] + ' Perustettu: ' + jsonObj['muodostettu'];
+			header.appendChild(myPara);
+
+		}
+
+		function buildSection(jsonObj) {
+			var mestariluettelo = jsonObj['jasenet'];
+
+			for(let i=0;i<mestariluettelo.length;i++) {
+				var myArticle = document.createElement('article');
+				var myH2 = document.createElement('h2');
+				var myPara1 = document.createElement('p');
+				var myPara2 = document.createElement('p');
+				var myPara3 = document.createElement('p');
+				var myList = document.createElement('ul');
+
+				myH2.textContent = mestariluettelo[i].nimi;
+				myPara1.textContent = 'Lempinimi: ' + mestariluettelo[i].lempinimi;
+				myPara2.textContent = 'Ikä: ' + mestariluettelo[i].ika;
+				myPara3.textContent = 'Vahvuudet: ';
+
+				var vahvuus = mestariluettelo[i].vahvuudet;
+				for(let j=0;j<vahvuus.lenght;j++) {
+					var listItem = document.createElement('li');
+					listItem.textContent = vahvuus[j];
+					myList.appendChild(listItem);
+				}
+				myArticle.appendChild(myH2);
+				myArticle.appendChild(myPara1);
+				myArticle.appendChild(myPara2);
+				myArticle.appendChild(myPara3);
+				myArticle.appendChild(myList);
+				section.appendChild(myArticle);
+			}
+		}
+
+		</script>
+	</body>
+</html>
