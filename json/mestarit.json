@@ -1,0 +1,40 @@
+{
+  "listanNimi" : "Parkour Mestarit",
+  "kotipaikka" : "Tampesteri",
+  "muodostettu" : 2016,
+  "kerhotila" : "Tornihotelli",
+  "aktiivinen" : true,
+  "jasenet" : [
+    {
+      "nimi" : "Manne Melkoinen",
+      "ika" : 22,
+      "lempinimi" : "Kumiukko",
+      "vahvuudet" : [
+        "Hypyt",
+        "Ylitykset",
+        "varjohypyt"
+      ]
+    },
+    {
+      "nimi" : "Anna Ahkera",
+      "ika" : 19,
+      "lempinimi" : "Hämis",
+      "vahvuudet" : [
+        "Tasapainoilu",
+        "Kiipeäminen",
+        "Köysitemput"
+      ]
+    },
+    {
+      "nimi" : "Eemeli Huikea",
+      "ika" : 40,
+      "lempinimi" : "Pilvipelle",
+      "vahvuudet" : [
+        "Kokemus",
+        "Vauhti",
+        "Kiipeäminen",
+        "Hypyt"
+      ]
+    }
+  ]
+}
