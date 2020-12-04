@@ -5,10 +5,30 @@ body {
     background-color: #3A405A;
 }
 
-.landing {
-    opacity: 0.5;
+#opaque-thing {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
     position: absolute;
-    background-color: black;
+    background-color:#3A405A;
+    z-index: 9;
+}
+
+#landing-text {
+    z-index: 100;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(58, 64, 90, 0.6);
+    width: 100vw;
+    height: fit-content;
+    color: white;
+    padding-left: 5vw;
+}
+
+.landing-container {
+    background-image: url(./book.jpg) no-repeat center center;
+    align-content: bottom;
+
 }
 
 .beige-color {
@@ -17,6 +37,11 @@ body {
 
 #header-bg {
     position: relative;
+}
+
+#header-bg > img {
+    height: 100vh;
+    width: 100vw;
 }
 
 #lang a {
@@ -32,6 +57,7 @@ body {
     z-index: 10;
     align-items: right;
     text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 a {
@@ -56,10 +82,6 @@ a {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.copyright {
-    text-align: center;
 }
 
 .big-container,
@@ -95,4 +117,12 @@ a {
 
 .footer-links > ul {
     list-style: none;
+}
+
+.footer-links > ul > li > a {
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
 }
