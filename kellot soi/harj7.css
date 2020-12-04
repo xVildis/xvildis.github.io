@@ -88,8 +88,9 @@ a {
 
 .footer-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-size: 1.2em;
 }
 
 .footer-links > ul {
