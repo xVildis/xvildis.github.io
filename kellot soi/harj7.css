@@ -4,6 +4,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.landing {
+
+}
+
 #header-bg {
     position: relative;
 }
@@ -41,3 +45,30 @@ a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.copyright {
+    text-align: center;
+}
+
+.big-container,
+.small-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-container {
+    flex-direction: row;
+}
+
+.big-container {
+    flex-direction: column;
+}
+
+.card-small,
+.card-big {
+    margin: 10px;
+}
+
+
+
