@@ -22,13 +22,13 @@ body {
     width: 100vw;
     height: fit-content;
     color: white;
-    padding-left: 5vw;
+    padding-left: 1vw;
 }
 
 .landing-container {
     background-image: url(./book.jpg) no-repeat center center;
     align-content: bottom;
-
+    height: fit-content;
 }
 
 .beige-color {
