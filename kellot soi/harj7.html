@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4351c45dac.js" crossorigin="anonymous"></script>
     <title>Kellot soi, vai soiko?</title>
     <link rel="stylesheet" href="harj7.css">
 </head>
@@ -33,43 +34,87 @@
             </div>
             <div id="landing-text">
                 <h1>Hanki soiva tulevaisuus koulustamme!</h1>
-                <p><strong>Kellot soi, vai soiko?</strong>koulu on kansainvälisesti tunnustettu oppimisen uudistaja ja kilpailukyvyn kehittäjä. Teemme aktiivista yhteistyötä työelämän kanssa ja toimimme laajassa kansainvälisessä verkostossa. Opiskelijoita meillä on 3500 ja henkilöstöä noin 320. </p>
+                <p><strong>Kellot soi, vai soiko?</strong> koulu on kansainvälisesti tunnustettu oppimisen uudistaja ja kilpailukyvyn kehittäjä. Teemme aktiivista yhteistyötä työelämän kanssa ja toimimme laajassa kansainvälisessä verkostossa. Opiskelijoita meillä on 3500 ja henkilöstöä noin 320. </p>
             </div>
         </div>
-        <div id="header-bg">
-            <img src="./book.jpg" alt="test">
-        </div>
+        <div id="opaque-thing"></div>
+        <div id="header-bg"></div>
     </header>
     <div class="container">
         <div class="small-container">
             <div class="card-small">
-                TODO: <!-- round corners, img, text under small shadow-->
+                <div class="small-card-img-container"><img src="./book.jpg"></div>
+                <h3 class="card-banner-text">Aliquam erat volutpat <br> rhoncus</h3>
+                <h2 class="card-text">Lorem ipsum dolor sit amet, consectetur <br>
+                    adipiscing elit. Vestibulum eleifend et orci at<br>
+                    dignissim. Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit. Vestibulum eleifend<br>
+                    et orci at dignissim. 
+                </h2>
+                <button class="dark-button">Hae meille
+                    <i class="fa fa-arrow-right"></i>
+                </button>
             </div>
             <div class="card-small">
-                TODO: <!-- round corners, img, text under small shadow-->
+                <div class="small-card-img-container"><img src="./book.jpg"></div>
+                <h3 class="card-banner-text">Aliquam erat volutpat <br> rhoncus</h3>
+                <h2 class="card-text">Lorem ipsum dolor sit amet, consectetur <br>
+                    adipiscing elit. Vestibulum eleifend et orci at<br>
+                    dignissim. Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit. Vestibulum eleifend<br>
+                    et orci at dignissim. 
+                </h2>
+                <button class="dark-button">Lue lisää
+                    <i class="fa fa-arrow-right"></i>
+                </button>
             </div>
             <div class="card-small">
-                TODO: <!-- round corners, img, text under small shadow-->
+                <div class="small-card-img-container"><img src="./book.jpg"></div>
+                <h3 class="card-header-text">Aliquam erat volutpat <br> rhoncus</h3>
+                <h2 class="card-text">Lorem ipsum dolor sit amet, consectetur <br>
+                    adipiscing elit. Vestibulum eleifend et orci at<br>
+                    dignissim. Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit. Vestibulum eleifend<br>
+                    et orci at dignissim. 
+                </h2>
+                <button class="dark-button">Lue lisää
+                    <i class="fa fa-arrow-right"></i>
+                </button>
             </div>
         </div>
         <div class="big-container">
+            <hr>
             <div class="card-big">
-                <img src="" alt="">
-                TODO: <!-- img on left or right alternating, site-wide patch of text with "lue lisää" and an arrow under -->
+                <div class="big-card-left">
+                    <div class="big-card-img"><img src="./book.jpg" alt=""></div>
+                    <div class="big-card-bannertext"></div>
+                    <div class="big-card-text"></div>
+                    <button class="card-button">Lue lisää
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            <br>
+            <hr>
             <div class="card-big">
-                <img src="" alt="">
-                TODO: <!-- img on left or right alternating, site-wide patch of text with "lue lisää" and an arrow under -->
+                <div class="big-card-right">
+                    <button class="card-button">Lue lisää
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                    <div class="big-card-img"><img src="./book.jpg" alt=""></div>
+                </div>
             </div>
+            <hr>
             <div class="card-big">
-                <img src="" alt="">
-                TODO: <!-- img on left or right alternating, site-wide patch of text with "lue lisää" and an arrow under -->
+                <div class="big-card-left">
+                    <div class="big-card-img"><img src="./book.jpg" alt=""></div>
+                    <button class="card-button">Lue lisää
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
         <footer>
             <div class="footer-links">
-                <!-- TODO: 3x3 list with links -->
                 <ul>
                     <li><a href="">Opiskelijalle</a></li>
                     <li><a href="">Töihin meille</a></li>
@@ -87,15 +132,18 @@
                 </ul>
             </div>
             <div class="footer-icons">
-                footer-icons
-                TODO: <!-- get icons, easiest with a flexbox -->
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube"></i>
             </div>
             <div class="contact-info">
-                footer-contact
-                TODO: <!-- simple text box -->
+                <p>Simonkatu 12B, 00100 Helsinki | Vaihde puh. 09 1234 5678 | <a href="mailto:info@koulutsoivaisoiko.fi">info@koulutsoivaisoiko.fi</a></p>>
             </div>
             <div class="copyright">
-                <p>&#169; Viljami Sillanpää 2020</p>
+                <p id="small">Copyright © Skill17 Web Development 2019</p>
             </div>
         </footer>
     </div>

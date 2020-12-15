@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
 
-		<title>Mestarit</title>
+<head>
+	<meta charset="utf-8">
 
-		<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
-		<style>
-			html {
-				font-family: 'helvetica neue', helvetica, arial, sans-serif;
-			}
+	<title>Mestarit</title>
 
-			body {
-				width: 800px;
-				margin: 0 auto;
-			}
+	<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+	<style>
+		html {
+			font-family: 'helvetica neue', helvetica, arial, sans-serif;
+		}
 
-			h1, h2 {
-				font-family: 'Amatic SC', bold;
-			}
+		body {
+			width: 800px;
+			margin: 0 auto;
+		}
 
-			/* header styles */
+		h1,
+		h2 {
+			font-family: 'Amatic SC', bold;
+		}
 
-			h1 {
-				font-size: 4rem;
-				text-align: center;
-			}
+		/* header styles */
 
-			header p {
-				font-size: 1.3rem;
-				font-weight: bold;
-				text-align: center;
-			}
+		h1 {
+			font-size: 4rem;
+			text-align: center;
+		}
 
-			/* section styles */
+		header p {
+			font-size: 1.3rem;
+			font-weight: bold;
+			text-align: center;
+		}
 
-			section article {
-				width: 33%;
-				float: left;
-			}
+		/* section styles */
 
-			section p {
-				margin: 5px 0;
-			}
+		section article {
+			width: 33%;
+			float: left;
+		}
 
-			section ul {
-				margin-top: 0;
-			}
+		section p {
+			margin: 5px 0;
+		}
 
-			h2 {
-				font-size: 2rem;
-				letter-spacing: -2px;
-				margin-bottom: 10px;
-			}
-		</style>
-	</head>
+		section ul {
+			margin-top: 0;
+		}
 
-	<body>
+		h2 {
+			font-size: 2rem;
+			letter-spacing: -2px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
 
-			<header>
+<body>
 
-			</header>
+	<header>
 
-			<section>
+	</header>
 
-			</section>
+	<section>
 
-		<script>
+	</section>
+
+	<script>
 		var header = document.querySelector('header');
 		var section = document.querySelector('section');
-		
+
 		var requestURL = 'mestarit.json';
 		var request = new XMLHttpRequest();
 		request.open('GET', requestURL);
@@ -97,7 +99,7 @@
 		function buildSection(jsonObj) {
 			var mestariluettelo = jsonObj['jasenet'];
 
-			for(let i=0;i<mestariluettelo.length;i++) {
+			for (let i = 0; i < mestariluettelo.length; i++) {
 				var myArticle = document.createElement('article');
 				var myH2 = document.createElement('h2');
 				var myPara1 = document.createElement('p');
@@ -111,7 +113,7 @@
 				myPara3.textContent = 'Vahvuudet: ';
 
 				var vahvuus = mestariluettelo[i].vahvuudet;
-				for(let j=0;j<vahvuus.lenght;j++) {
+				for (let j = 0; j < vahvuus.lenght; j++) {
 					var listItem = document.createElement('li');
 					listItem.textContent = vahvuus[j];
 					myList.appendChild(listItem);
@@ -124,7 +126,7 @@
 				section.appendChild(myArticle);
 			}
 		}
+	</script>
+</body>
 
-		</script>
-	</body>
 </html>
