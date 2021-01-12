@@ -4,7 +4,9 @@ body, html {
     margin: 0;
     text-align: center;
     scroll-behavior: smooth;
+    background-color: #181a1b;
 
+    color: white;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -23,9 +25,11 @@ table {
     outline: 1px solid black;
 }
 
-#ruokakuvat img{
+#ruokakuvat img {
     float: center;
     border-radius: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #aukiolo {
@@ -34,6 +38,10 @@ table {
 
 #poutavaraus {
     padding-top: 10px;
+}
+
+#kuvaus {
+    font-size: 150%;
 }
 
 /* #erikoisa {
@@ -47,23 +55,8 @@ table {
     text-align: center;
 } */
 
-textarea {
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 30%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    color: rgb(0,0,0);
-    background-color: #c8c8c8;
-    border-radius: 4px;
-    resize: none;
-} 
-
 footer {
     font-size: 120%;
-    
-    outline: 1px solid black;
 }
 
 input[type=submit] {
